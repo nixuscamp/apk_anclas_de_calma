@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>SGSST: Anclas de Calma | Kit de Bienestar Mental - Nixus</title>
+    <title>SGSST: Anclas de Calma | Kit de Bienestar Psicosocial - Nixus</title>
 
     <!-- Configuración PWA -->
     <link rel="manifest" href="./manifest.json">
@@ -22,55 +22,27 @@
             darkMode: 'class',
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                    },
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
                     colors: {
                         calm: {
-                            50: '#f0fdfa',
-                            100: '#ccfbf1',
-                            200: '#99f6e4',
-                            300: '#5eead4',
-                            400: '#2dd4bf',
-                            500: '#14b8a6',
-                            600: '#0d9488',
-                            700: '#0f766e',
-                            800: '#115e59',
-                            900: '#134e4a',
-                            950: '#042f2e',
-                        },
-                        sgsst: {
-                            blue: '#1e3a8a',
-                            light: '#e0f2fe',
-                            emerald: '#059669',
-                            amber: '#d97706'
+                            50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4', 300: '#5eead4',
+                            400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e',
+                            800: '#115e59', 900: '#134e4a', 950: '#042f2e'
                         }
                     },
-                    animation: {
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
-                    }
+                    animation: { 'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite' }
                 }
             }
         }
     </script>
     <style>
-        ::-webkit-scrollbar { width: 6px; height: 6px; }
-        ::-webkit-scrollbar-track { background: rgba(0,0,0,0.05); }
+        ::-webkit-scrollbar { width: 5px; height: 5px; }
         ::-webkit-scrollbar-thumb { background: rgba(20, 184, 166, 0.4); border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: rgba(20, 184, 166, 0.7); }
         .bg-mesh {
             background-color: #f8fafc;
             background-image: 
-                radial-gradient(at 0% 0%, rgba(20, 184, 166, 0.12) 0px, transparent 50%),
-                radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.1) 0px, transparent 50%),
-                radial-gradient(at 50% 100%, rgba(16, 185, 129, 0.08) 0px, transparent 50%);
+                radial-gradient(at 0% 0%, rgba(20, 184, 166, 0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.08) 0px, transparent 50%);
         }
     </style>
 </head>
@@ -79,29 +51,24 @@
     <!-- MODAL DE ONBOARDING: INGRESO DE EMPRESA -->
     <div id="modalOnboarding" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-calm-200 text-center space-y-4">
-            <div class="w-14 h-14 bg-gradient-to-tr from-calm-600 to-teal-400 text-white rounded-2xl flex items-center justify-center mx-auto shadow-md shadow-calm-500/20">
+            <div class="w-14 h-14 bg-gradient-to-tr from-calm-600 to-teal-400 text-white rounded-2xl flex items-center justify-center mx-auto shadow-md">
                 <i data-lucide="heart-handshake" class="w-7 h-7"></i>
             </div>
             <div>
                 <span class="text-[10px] font-black uppercase tracking-widest text-calm-700">NIXUS CAPITAL HUMANO • SG-SST</span>
                 <h3 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">Anclas de Calma</h3>
-                <p class="text-xs text-slate-500 mt-1">
-                    Gestión del Riesgo Psicosocial, Autorregulación y Bienestar Ocupacional (Res. 2764 de 2022).
-                </p>
+                <p class="text-xs text-slate-500 mt-1">Intervención del Riesgo Psicosocial y Autorregulación (Res. 2764 de 2022).</p>
             </div>
-
             <form id="formOnboarding" class="space-y-3 pt-2 text-left">
                 <div>
                     <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">Nombre de la Empresa</label>
-                    <input type="text" id="inputEmpresaNombre" required placeholder="Ej: BAVARIA / COLCAFE / NIXUS" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-3 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-calm-500 transition">
+                    <input type="text" id="inputEmpresaNombre" required placeholder="Ej: BAVARIA / COLCAFE / NIXUS" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-3 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-calm-500">
                 </div>
-
                 <div class="bg-slate-50 border border-slate-200 rounded-xl p-3 text-[10px] text-slate-500 leading-relaxed flex items-start gap-2">
-                    <span class="text-xs">🔒</span>
-                    <span><strong>Ley 1581 de 2012 (Habeas Data):</strong> Sesión protegida y anónima. No recolectamos nombres completos, documentos de identidad ni historiales clínicos individuales.</span>
+                    <span>🔒</span>
+                    <span><strong>Ley 1581 de 2012 (Habeas Data):</strong> Sesión protegida y anónima. No recolectamos nombres completos ni historiales clínicos individuales.</span>
                 </div>
-
-                <button type="submit" class="w-full bg-calm-600 hover:bg-calm-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-calm-600/30 transition-all flex items-center justify-center space-x-2 text-xs sm:text-sm">
+                <button type="submit" class="w-full bg-calm-600 hover:bg-calm-700 text-white font-bold py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center space-x-2 text-xs sm:text-sm">
                     <span>Ingresar a Mi Espacio de Calma</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </button>
@@ -109,38 +76,31 @@
         </div>
     </div>
 
-    <!-- TOP NAVIGATION & BRANDING (ENCABEZADO SIMPLIFICADO UX) -->
-    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- ENCABEZADO CON LOGO NIXUS Y ACCESOS CLAROS -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="flex items-center justify-between h-16">
-                <!-- Logo & SGSST Info -->
                 <div class="flex items-center space-x-3">
-                    <img src="https://lh3.googleusercontent.com/d/1nSK5JUm8IDFsgXvGYkJfgwtErm3rzPsC" alt="Logo Nixus" class="h-8 w-auto object-contain">
+                    <img src="https://lh3.googleusercontent.com/d/1nSK5JUm8IDFsgXvGYkJfgwtErm3rzPsC" alt="Logo Nixus Capital Humano" class="h-8 w-auto object-contain">
                     <div>
                         <div class="flex items-center space-x-2">
-                            <span class="font-extrabold text-slate-900 text-base sm:text-lg tracking-tight">Anclas de Calma</span>
-                            <span id="badgeEmpresaHeader" class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-calm-100 text-calm-800 truncate max-w-[120px]">
-                                Empresa
-                            </span>
+                            <span class="font-extrabold text-slate-900 text-base tracking-tight">Anclas de Calma</span>
+                            <span id="badgeEmpresaHeader" class="px-2 py-0.5 rounded text-[10px] font-bold bg-calm-100 text-calm-800">Empresa</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Stats Bar & Gamification Summary -->
                 <div class="flex items-center space-x-2 sm:space-x-3">
-                    <div class="hidden md:flex items-center space-x-3 bg-slate-100/80 px-3 py-1.5 rounded-full text-xs font-medium border border-slate-200">
-                        <div class="flex items-center space-x-1.5 text-calm-700">
-                            <i data-lucide="sparkles" class="w-4 h-4 text-calm-500"></i>
-                            <span>Puntos: <strong id="user-points">50</strong></span>
-                        </div>
+                    <div class="hidden sm:flex items-center space-x-1.5 bg-slate-100 px-3 py-1.5 rounded-full text-xs font-bold text-calm-700">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-calm-500"></i>
+                        <span>Puntos: <strong id="user-points">50</strong></span>
                     </div>
 
-                    <button onclick="cambiarEmpresa()" class="text-[11px] font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 px-2.5 py-1.5 rounded-xl border border-slate-300 transition">
+                    <button onclick="cambiarEmpresa()" class="text-[11px] font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 px-2.5 py-1.5 rounded-xl border border-slate-300">
                         🔄 Cambiar
                     </button>
 
-                    <!-- Botón de Rescate Vagal / Ayuda Inmediata -->
-                    <button onclick="openRescueModal()" class="inline-flex items-center space-x-1.5 bg-teal-700 hover:bg-teal-800 active:scale-95 text-white text-xs font-bold px-3 py-2 rounded-xl shadow-md shadow-teal-700/20 transition-all animate-pulse-slow">
+                    <button onclick="openRescueModal()" class="inline-flex items-center space-x-1.5 bg-teal-700 hover:bg-teal-800 text-white text-xs font-bold px-3 py-2 rounded-xl shadow-md animate-pulse-slow">
                         <i data-lucide="wind" class="w-4 h-4"></i>
                         <span>Necesito Ayuda Ahora</span>
                     </button>
@@ -149,102 +109,94 @@
         </div>
     </header>
 
-    <!-- MAIN CONTAINER -->
-    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col gap-6">
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 py-6 flex flex-col gap-6">
 
         <!-- Banner Contextual Cierra-ble -->
-        <div id="contextual-banner" class="bg-gradient-to-r from-teal-500/10 via-calm-500/10 to-blue-500/10 border border-teal-200/80 rounded-2xl p-4 sm:p-5 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 relative overflow-hidden">
-            <div class="flex items-start space-x-3.5">
-                <div class="p-2.5 bg-teal-500/20 text-teal-800 rounded-xl mt-0.5 sm:mt-0 flex-shrink-0">
-                    <i data-lucide="sparkles" class="w-6 h-6"></i>
-                </div>
+        <div id="contextual-banner" class="bg-gradient-to-r from-teal-500/15 to-calm-500/15 border border-teal-200 rounded-2xl p-4 shadow-sm flex items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="p-2 bg-teal-500/20 text-teal-800 rounded-xl"><i data-lucide="shield-check" class="w-5 h-5"></i></div>
                 <div>
-                    <h3 class="text-sm sm:text-base font-bold text-slate-900 flex items-center gap-2">
-                        Jornada de Prevención Psicosocial Activa (Res. 2764/2022)
-                    </h3>
-                    <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
-                        Tómate 3 minutos para evaluar cómo te sientes o accede directamente a herramientas de autorregulación somática.
-                    </p>
+                    <h3 class="text-xs sm:text-sm font-bold text-slate-900">Programa de Prevención Psicosocial • Res. 2764 de 2022</h3>
+                    <p class="text-[11px] text-slate-600">Herramienta orientada al autocuidado, manejo del estrés y ergonomía mental.</p>
                 </div>
             </div>
-            <button onclick="dismissBanner()" class="p-1.5 text-slate-400 hover:text-slate-600 rounded-lg self-end sm:self-center">
-                <i data-lucide="x" class="w-4 h-4"></i>
-            </button>
+            <button onclick="dismissBanner()" class="text-slate-400 hover:text-slate-600 p-1"><i data-lucide="x" class="w-4 h-4"></i></button>
         </div>
 
-        <!-- 2 ENTRADAS PRINCIPALES: DIAGNÓSTICO VS ACCESO DIRECTO -->
+        <!-- 2 ENTRADAS: DIAGNÓSTICO VS HERRAMIENTAS DIRECTAS -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <button onclick="switchMode('diagnosis')" id="mode-btn-diag" class="p-5 rounded-2xl border-2 border-calm-500 bg-calm-50/50 text-left transition-all space-y-2 group shadow-sm">
                 <div class="w-10 h-10 rounded-xl bg-calm-600 text-white flex items-center justify-center font-bold">
                     <i data-lucide="stethoscope" class="w-5 h-5"></i>
                 </div>
                 <h3 class="font-extrabold text-slate-900 text-base">Quiero conocer cómo estoy</h3>
-                <p class="text-xs text-slate-600">Evaluación breve de bienestar (4 etapas) y recomendación personalizada.</p>
+                <p class="text-xs text-slate-600">Evaluación conversacional de 4 etapas con recomendación personalizada.</p>
             </button>
 
             <button onclick="switchMode('tools')" id="mode-btn-tools" class="p-5 rounded-2xl border-2 border-slate-200 bg-white hover:border-teal-500 text-left transition-all space-y-2 group shadow-sm">
                 <div class="w-10 h-10 rounded-xl bg-teal-700 text-white flex items-center justify-center font-bold">
                     <i data-lucide="zap" class="w-5 h-5"></i>
                 </div>
-                <h3 class="font-extrabold text-slate-900 text-base">Necesito ayuda ahora</h3>
-                <p class="text-xs text-slate-600">Acceso directo a ejercicios de respiración, relajación y anclaje inmediato.</p>
+                <h3 class="font-extrabold text-slate-900 text-base">Kit de Herramientas Inmediatas</h3>
+                <p class="text-xs text-slate-600">Acceso directo a respiración guiada, anclaje sensorial, pomodoro y microaprendizajes.</p>
             </button>
         </div>
 
-        <!-- SECCIÓN 1: DIAGNÓSTICO CONVERSACIONAL DE 4 ETAPAS -->
-        <section id="section-diagnosis" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200/80 space-y-6">
-            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-2">
+        <!-- SECCIÓN 1: DIAGNÓSTICO CONVERSACIONAL (4 ETAPAS) -->
+        <section id="section-diagnosis" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500">
                 <span id="diag-step-title">Etapa 1 de 4: Estado Predominante</span>
-                <span id="diag-progress-txt">25% Completado</span>
+                <span id="diag-progress-txt">25%</span>
             </div>
-            <div class="w-full bg-slate-100 rounded-full h-2 mb-4 overflow-hidden">
+            <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
                 <div id="diag-progress-bar" class="bg-calm-500 h-2 rounded-full transition-all duration-300 w-1/4"></div>
             </div>
 
             <!-- Etapa 1 -->
             <div id="diag-step-1" class="diag-step space-y-4">
-                <h2 class="text-xl font-bold text-slate-900">¿Cómo te has sentido últimamente?</h2>
-                <p class="text-xs text-slate-500">Selecciona la opción que mejor describe cómo te encuentras en este momento.</p>
+                <h2 class="text-lg sm:text-xl font-bold text-slate-900">¿Cómo te has sentido últimamente?</h2>
+                <p class="text-xs text-slate-500">Selecciona la opción que mejor describe tu estado en este momento.</p>
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                    <button onclick="setDiagAnswer(1, 'Estrés')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 hover:bg-calm-50 font-bold text-xs text-slate-800 transition text-left">⚡ Estrés</button>
-                    <button onclick="setDiagAnswer(1, 'Ansiedad')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 hover:bg-calm-50 font-bold text-xs text-slate-800 transition text-left">🌊 Ansiedad</button>
-                    <button onclick="setDiagAnswer(1, 'Agotamiento')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 hover:bg-calm-50 font-bold text-xs text-slate-800 transition text-left">🔋 Agotamiento</button>
-                    <button onclick="setDiagAnswer(1, 'Miedo')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 hover:bg-calm-50 font-bold text-xs text-slate-800 transition text-left">🛡️ Miedo</button>
-                    <button onclick="setDiagAnswer(1, 'Desconcentración')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 hover:bg-calm-50 font-bold text-xs text-slate-800 transition text-left">🎯 Desconcentración</button>
-                    <button onclick="setDiagAnswer(1, 'Otro / Bien')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 hover:bg-calm-50 font-bold text-xs text-slate-800 transition text-left">🌱 Otro / Bien</button>
+                    <button onclick="setDiagAnswer(1, 'Estrés')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition text-left">⚡ Estrés</button>
+                    <button onclick="setDiagAnswer(1, 'Ansiedad')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition text-left">🌊 Ansiedad</button>
+                    <button onclick="setDiagAnswer(1, 'Agotamiento')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition text-left">🔋 Agotamiento</button>
+                    <button onclick="setDiagAnswer(1, 'Miedo')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition text-left">🛡️ Miedo</button>
+                    <button onclick="setDiagAnswer(1, 'Desconcentración')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition text-left">🎯 Desconcentración</button>
+                    <button onclick="setDiagAnswer(1, 'Otro / Bien')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition text-left">🌱 Otro / Bien</button>
                 </div>
             </div>
 
             <!-- Etapa 2 -->
             <div id="diag-step-2" class="diag-step space-y-4 hidden">
-                <h2 class="text-xl font-bold text-slate-900">¿Qué intensidad tiene?</h2>
-                <p class="text-xs text-slate-500">Una escala sencilla para valorar el nivel de impacto.</p>
+                <h2 class="text-lg sm:text-xl font-bold text-slate-900">¿Qué intensidad tiene?</h2>
+                <p class="text-xs text-slate-500">Valoración cualitativa del nivel de impacto actual.</p>
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                    <button onclick="setDiagAnswer(2, 'Leve')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">🟢 Leve</button>
-                    <button onclick="setDiagAnswer(2, 'Moderado')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">🟡 Moderado</button>
-                    <button onclick="setDiagAnswer(2, 'Intenso')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">🟠 Intenso</button>
-                    <button onclick="setDiagAnswer(2, 'Muy intenso')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">🔴 Muy intenso</button>
+                    <button onclick="setDiagAnswer(2, 'Leve')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">🟢 Leve</button>
+                    <button onclick="setDiagAnswer(2, 'Moderado')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">🟡 Moderado</button>
+                    <button onclick="setDiagAnswer(2, 'Intenso')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">🟠 Intenso</button>
+                    <button onclick="setDiagAnswer(2, 'Muy intenso')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">🔴 Muy intenso</button>
                 </div>
                 <button onclick="prevDiagStep(1)" class="text-xs font-semibold text-slate-500 hover:text-slate-800 pt-2 flex items-center gap-1">← Regresar</button>
             </div>
 
             <!-- Etapa 3 -->
             <div id="diag-step-3" class="diag-step space-y-4 hidden">
-                <h2 class="text-xl font-bold text-slate-900">¿Desde cuándo te sientes así?</h2>
-                <p class="text-xs text-slate-500">Identificar si es una sensación reciente o persistente.</p>
+                <h2 class="text-lg sm:text-xl font-bold text-slate-900">¿Desde cuándo te sientes así?</h2>
+                <p class="text-xs text-slate-500">Identificar persistencia temporal.</p>
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                    <button onclick="setDiagAnswer(3, 'En este momento')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">⏱️ En este momento</button>
-                    <button onclick="setDiagAnswer(3, 'Desde hoy')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">📅 Desde hoy</button>
-                    <button onclick="setDiagAnswer(3, 'Varios días')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">⏳ Varios días</button>
-                    <button onclick="setDiagAnswer(3, 'Varias semanas')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">📈 Varias semanas</button>
+                    <button onclick="setDiagAnswer(3, 'En este momento')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">⏱️ En este momento</button>
+                    <button onclick="setDiagAnswer(3, 'Desde hoy')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">📅 Desde hoy</button>
+                    <button onclick="setDiagAnswer(3, 'Varios días')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">⏳ Varios días</button>
+                    <button onclick="setDiagAnswer(3, 'Varias semanas')" class="diag-opt p-3.5 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition">📈 Varias semanas</button>
                 </div>
                 <button onclick="prevDiagStep(2)" class="text-xs font-semibold text-slate-500 hover:text-slate-800 pt-2 flex items-center gap-1">← Regresar</button>
             </div>
 
             <!-- Etapa 4 -->
             <div id="diag-step-4" class="diag-step space-y-4 hidden">
-                <h2 class="text-xl font-bold text-slate-900">¿Qué necesitas en este momento?</h2>
-                <p class="text-xs text-slate-500">Identifica tu necesidad inmediata de apoyo.</p>
+                <h2 class="text-lg sm:text-xl font-bold text-slate-900">¿Qué necesitas en este momento?</h2>
+                <p class="text-xs text-slate-500">Selecciona el apoyo inmediato requerido.</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <button onclick="setDiagAnswer(4, 'Relajarme')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition text-left">🧘 Relajarme</button>
                     <button onclick="setDiagAnswer(4, 'Recuperar concentración')" class="diag-opt p-4 rounded-xl border border-slate-200 hover:border-calm-500 font-bold text-xs text-slate-800 transition text-left">🎯 Recuperar concentración</button>
@@ -254,7 +206,7 @@
                 <button onclick="prevDiagStep(3)" class="text-xs font-semibold text-slate-500 hover:text-slate-800 pt-2 flex items-center gap-1">← Regresar</button>
             </div>
 
-            <!-- Pantalla de Resultados Humanizada -->
+            <!-- Resultados Humanizados -->
             <div id="diag-result-screen" class="hidden space-y-4">
                 <div class="p-6 bg-gradient-to-br from-calm-500/10 via-teal-50 to-emerald-50 rounded-2xl border border-calm-200 space-y-4 text-left">
                     <span class="px-3 py-1 bg-calm-100 text-calm-800 text-[10px] font-bold rounded-full uppercase">Tu espacio de bienestar</span>
@@ -264,10 +216,10 @@
                     <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                         <div>
                             <span class="text-[10px] font-bold text-calm-700 uppercase">Ejercicio recomendado</span>
-                            <h4 id="rec-title" class="font-extrabold text-slate-900 text-sm">Respiración Consciente (3 minutos)</h4>
-                            <p class="text-xs text-slate-500">Práctica guiada para reducir la activación y la fatiga.</p>
+                            <h4 id="rec-title" class="font-extrabold text-slate-900 text-sm">Respiración Guiada Interactiva</h4>
+                            <p class="text-xs text-slate-500">Práctica guiada para reducir la activación autonómica.</p>
                         </div>
-                        <button onclick="jumpToTool('breath')" class="bg-calm-600 hover:bg-calm-700 text-white font-bold px-4 py-2.5 rounded-xl text-xs shadow-md whitespace-nowrap">
+                        <button onclick="openBreathModal()" class="bg-calm-600 hover:bg-calm-700 text-white font-bold px-4 py-2.5 rounded-xl text-xs shadow-md whitespace-nowrap">
                             Comenzar →
                         </button>
                     </div>
@@ -276,61 +228,138 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 2: ECOSISTEMA DE HERRAMIENTAS (8 FUNCIONALIDADES) -->
+        <!-- SECCIÓN 2: KIT DE HERRAMIENTAS INTERACTIVAS COMPLETAS -->
         <section id="section-tools" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6 hidden">
             <div>
                 <span class="text-[10px] font-black uppercase tracking-widest text-calm-700">Kit de Autocuidado SG-SST</span>
                 <h2 class="text-xl font-extrabold text-slate-900">Herramientas Inmediatas de Bienestar</h2>
-                <p class="text-xs text-slate-500 mt-0.5">Selecciona el recurso somático o cognitivo que requieras en este momento.</p>
+                <p class="text-xs text-slate-500 mt-0.5">Ejercicios somáticos y cognitivos validados para la gestión del estrés laboral.</p>
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                <button onclick="openToolModal('breath')" class="p-4 rounded-2xl border border-slate-200 hover:border-calm-500 bg-slate-50 text-center space-y-1.5 transition">
-                    <i data-lucide="wind" class="w-6 h-6 mx-auto text-calm-600"></i>
-                    <span class="text-xs font-bold block text-slate-800">1. Respiración Guiada</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <button onclick="openBreathModal()" class="p-5 rounded-2xl border border-slate-200 hover:border-calm-500 bg-slate-50 text-left space-y-2 transition shadow-sm">
+                    <div class="w-10 h-10 rounded-xl bg-calm-100 text-calm-700 flex items-center justify-center font-bold">
+                        <i data-lucide="wind" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-sm">1. Respiración Guiada Interactiva</h3>
+                    <p class="text-xs text-slate-600">Animación visual guiada (Suspiro Fisiológico y Cuadrada) para regular el ritmo cardíaco en minutos.</p>
                 </button>
-                <button onclick="openToolModal('grounding')" class="p-4 rounded-2xl border border-slate-200 hover:border-calm-500 bg-slate-50 text-center space-y-1.5 transition">
-                    <i data-lucide="anchor" class="w-6 h-6 mx-auto text-amber-600"></i>
-                    <span class="text-xs font-bold block text-slate-800">2. Anclaje 5-4-3-2-1</span>
+
+                <button onclick="openGroundingModal()" class="p-5 rounded-2xl border border-slate-200 hover:border-amber-500 bg-slate-50 text-left space-y-2 transition shadow-sm">
+                    <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold">
+                        <i data-lucide="anchor" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-sm">2. Ejercicio de Anclaje Sensorial 5-4-3-2-1</h3>
+                    <p class="text-xs text-slate-600">Guía interactiva para conectar con tus sentidos e interrumpir bucles de rumiación mental.</p>
                 </button>
-                <button onclick="openToolModal('stretches')" class="p-4 rounded-2xl border border-slate-200 hover:border-calm-500 bg-slate-50 text-center space-y-1.5 transition">
-                    <i data-lucide="activity" class="w-6 h-6 mx-auto text-emerald-600"></i>
-                    <span class="text-xs font-bold block text-slate-800">3. Pausas Activas</span>
+
+                <button onclick="openPomodoroModal()" class="p-5 rounded-2xl border border-slate-200 hover:border-purple-500 bg-slate-50 text-left space-y-2 transition shadow-sm">
+                    <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold">
+                        <i data-lucide="timer" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-sm">3. Técnica Pomodoro Consciente</h3>
+                    <p class="text-xs text-slate-600">Temporizador estructurado (25 min de enfoque + 5 min de pausa) para prevenir el síndrome de Burnout.</p>
                 </button>
-                <button onclick="openToolModal('journal')" class="p-4 rounded-2xl border border-slate-200 hover:border-calm-500 bg-slate-50 text-center space-y-1.5 transition">
-                    <i data-lucide="book-open" class="w-6 h-6 mx-auto text-blue-600"></i>
-                    <span class="text-xs font-bold block text-slate-800">4. Diario Emocional</span>
-                </button>
-                <button onclick="openToolModal('micro')" class="p-4 rounded-2xl border border-slate-200 hover:border-calm-500 bg-slate-50 text-center space-y-1.5 transition">
-                    <i data-lucide="brain" class="w-6 h-6 mx-auto text-purple-600"></i>
-                    <span class="text-xs font-bold block text-slate-800">5. Microaprendizajes</span>
-                </button>
-                <button onclick="openToolModal('route')" class="p-4 rounded-2xl border border-slate-200 hover:border-calm-500 bg-slate-50 text-center space-y-1.5 transition">
-                    <i data-lucide="map-pin" class="w-6 h-6 mx-auto text-rose-600"></i>
-                    <span class="text-xs font-bold block text-slate-800">6. Ruta de Apoyo</span>
-                </button>
-                <button onclick="openToolModal('challenges')" class="p-4 rounded-2xl border border-slate-200 hover:border-calm-500 bg-slate-50 text-center space-y-1.5 transition">
-                    <i data-lucide="award" class="w-6 h-6 mx-auto text-amber-500"></i>
-                    <span class="text-xs font-bold block text-slate-800">7. Retos de Bienestar</span>
-                </button>
-                <button onclick="openToolModal('kpis')" class="p-4 rounded-2xl border border-slate-200 hover:border-calm-500 bg-slate-50 text-center space-y-1.5 transition">
-                    <i data-lucide="bar-chart-3" class="w-6 h-6 mx-auto text-teal-600"></i>
-                    <span class="text-xs font-bold block text-slate-800">8. Indicadores SST</span>
+
+                <button onclick="openMicroModal()" class="p-5 rounded-2xl border border-slate-200 hover:border-blue-500 bg-slate-50 text-left space-y-2 transition shadow-sm">
+                    <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold">
+                        <i data-lucide="brain" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 text-sm">4. Microaprendizajes SG-SST (Tips Preventivos)</h3>
+                    <p class="text-xs text-slate-600">Cápsulas sobre desconexión laboral, manejo del tiempo, ergonomía cognitiva y comunicación asertiva.</p>
                 </button>
             </div>
         </section>
 
     </main>
 
-    <!-- MODAL DE HERRAMIENTAS / INTERACTIVAS -->
-    <div id="tool-modal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-md flex items-center justify-center p-4 hidden">
-        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative space-y-4 max-h-[90vh] overflow-y-auto">
-            <button onclick="closeToolModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-2"><i data-lucide="x" class="w-5 h-5"></i></button>
-            <div id="tool-modal-content" class="space-y-4"></div>
+    <!-- MODAL DE RESPIRACIÓN GUIADA INTERACTIVA -->
+    <div id="breath-modal" class="fixed inset-0 z-50 bg-slate-900/85 backdrop-blur-md flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 text-center space-y-6 relative shadow-2xl">
+            <button onclick="closeBreathModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-2"><i data-lucide="x" class="w-5 h-5"></i></button>
+            <div>
+                <span class="px-3 py-1 bg-calm-100 text-calm-800 text-[10px] font-bold rounded-full uppercase">Neurobiología del Bienestar</span>
+                <h3 class="text-xl font-black text-slate-900 mt-2">Suspiro Fisiológico Guiado</h3>
+                <p id="breath-instruction" class="text-xs text-slate-600 mt-1">Inhala profundo en dos tiempos y exhala lentamente.</p>
+            </div>
+            <div class="relative w-40 h-40 mx-auto flex items-center justify-center">
+                <div id="breath-orb" class="w-32 h-32 rounded-full bg-gradient-to-tr from-calm-600 to-teal-400 text-white flex flex-col items-center justify-center shadow-xl transition-all duration-1000 scale-100">
+                    <span id="breath-label" class="text-xs font-extrabold uppercase">INHALA</span>
+                    <span id="breath-timer" class="text-lg font-mono font-bold mt-1">4s</span>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <button onclick="startBreathingCycle()" class="flex-1 bg-calm-600 hover:bg-calm-700 text-white font-bold py-3 rounded-xl text-xs shadow-md">Iniciar Ejercicio (1 Min)</button>
+                <button onclick="closeBreathModal()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-4 py-3 rounded-xl text-xs">Cerrar</button>
+            </div>
         </div>
     </div>
 
-    <!-- MODAL SOS / RESCATE VAGAL -->
+    <!-- MODAL DE ANCLAJE SENSORIAL (GROUNDING) -->
+    <div id="grounding-modal" class="fixed inset-0 z-50 bg-slate-900/85 backdrop-blur-md flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 text-left space-y-5 relative shadow-2xl">
+            <button onclick="closeGroundingModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-2"><i data-lucide="x" class="w-5 h-5"></i></button>
+            <div>
+                <span class="px-3 py-1 bg-amber-100 text-amber-800 text-[10px] font-bold rounded-full uppercase">Terapia Somática</span>
+                <h3 class="text-xl font-black text-slate-900 mt-2">Anclaje Sensorial 5-4-3-2-1</h3>
+            </div>
+            <div id="grounding-content" class="bg-amber-50/60 p-4 rounded-2xl border border-amber-200 space-y-2 text-xs text-amber-900"></div>
+            <div class="flex items-center justify-between pt-2">
+                <span id="grounding-counter" class="text-xs font-bold text-slate-500">Paso 1 de 5</span>
+                <button onclick="nextGroundingStep()" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-5 py-2.5 rounded-xl text-xs shadow-md">Siguiente Sentido →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE TÉCNICA POMODORO -->
+    <div id="pomodoro-modal" class="fixed inset-0 z-50 bg-slate-900/85 backdrop-blur-md flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 text-center space-y-5 relative shadow-2xl">
+            <button onclick="closePomodoroModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-2"><i data-lucide="x" class="w-5 h-5"></i></button>
+            <div>
+                <span class="px-3 py-1 bg-purple-100 text-purple-800 text-[10px] font-bold rounded-full uppercase">Ergonomía Cognitiva</span>
+                <h3 class="text-xl font-black text-slate-900 mt-2">Pomodoro Consciente</h3>
+                <p class="text-xs text-slate-500 mt-1">Bloque de trabajo sin distracciones</p>
+            </div>
+            <div class="text-5xl font-black text-slate-900 font-mono py-4" id="pomo-display">25:00</div>
+            <div class="flex gap-2">
+                <button onclick="togglePomodoroTimer()" id="pomo-toggle-btn" class="flex-1 bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-xl text-xs shadow-md">Iniciar Bloque</button>
+                <button onclick="closePomodoroModal()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-4 py-3 rounded-xl text-xs">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE MICROAPRENDIZAJES (MÚLTIPLES TIPS PREVENTIVOS SG-SST) -->
+    <div id="micro-modal" class="fixed inset-0 z-50 bg-slate-900/85 backdrop-blur-md flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 text-left space-y-4 relative shadow-2xl max-h-[85vh] overflow-y-auto">
+            <button onclick="closeMicroModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-2"><i data-lucide="x" class="w-5 h-5"></i></button>
+            <div>
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-[10px] font-bold rounded-full uppercase">Cápsulas de Bienestar SG-SST</span>
+                <h3 class="text-xl font-black text-slate-900 mt-2">Recomendaciones Preventivas</h3>
+                <p class="text-xs text-slate-500">Buenas prácticas institucionales para proteger tu salud mental (Ley 1581 / Res. 2764).</p>
+            </div>
+            <div class="space-y-3 text-xs text-slate-700">
+                <div class="p-3.5 bg-blue-50 rounded-2xl border border-blue-200 space-y-1">
+                    <strong class="text-blue-900 block font-bold">1. Derecho a la Desconexión Laboral (Ley 2191 de 2022)</strong>
+                    <p class="text-slate-600">Disfruta tus espacios de descanso y fines de semana sin la presión de responder correos o chats corporativos no urgentes. El descanso protege tu rendimiento.</p>
+                </div>
+                <div class="p-3.5 bg-emerald-50 rounded-2xl border border-emerald-200 space-y-1">
+                    <strong class="text-emerald-900 block font-bold">2. Gestión de Prioridades y Carga Cuantitativa</strong>
+                    <p class="text-slate-600">Ante múltiples solicitudes, dialoga con tu líder para acordar plazos realistas. Fraccionar grandes tareas en metas pequeñas reduce drásticamente la ansiedad.</p>
+                </div>
+                <div class="p-3.5 bg-amber-50 rounded-2xl border border-amber-200 space-y-1">
+                    <strong class="text-amber-900 block font-bold">3. Pausas Cognitivas frente a Pantallas</strong>
+                    <p class="text-slate-600">Aplica la regla 20-20-20: cada 20 minutos, mira a 20 pies de distancia (6 metros) durante al menos 20 segundos para relajar la musculatura ocular.</p>
+                </div>
+                <div class="p-3.5 bg-purple-50 rounded-2xl border border-purple-200 space-y-1">
+                    <strong class="text-purple-900 block font-bold">4. Comunicación Asertiva en Equipos</strong>
+                    <p class="text-slate-600">Expresa tus necesidades operativas de forma clara, respetuosa y oportuna. Un buen clima laboral previene la tensión psicosocial intralaboral.</p>
+                </div>
+            </div>
+            <button onclick="closeMicroModal()" class="w-full bg-slate-900 text-white font-bold py-3 rounded-xl text-xs">Entendido</button>
+        </div>
+    </div>
+
+    <!-- MODAL SOS / PAUSA VAGAL DE RESCATE -->
     <div id="rescue-modal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4 hidden">
         <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 text-center space-y-6 relative">
             <button onclick="closeRescueModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600"><i data-lucide="x" class="w-5 h-5"></i></button>
@@ -351,19 +380,14 @@
 
     <script>
         // ==============================================================
-        // 1. REGISTRO DEL SERVICE WORKER (MODO OFFLINE PWA)
+        // 1. SERVICE WORKER & CONFIGURACIÓN WEBHOOK
         // ==============================================================
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js')
-                    .then(() => console.log('Service Worker: Modo Offline Operativo'))
-                    .catch(err => console.warn('Aviso SW:', err));
+                navigator.serviceWorker.register('./sw.js').catch(err => console.warn(err));
             });
         }
 
-        // ==============================================================
-        // 2. CONFIGURACIÓN DEL WEBHOOK DE GOOGLE APPS SCRIPT
-        // ==============================================================
         const APPS_SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxjTcR9WDfG3wCfOAIMhrQ65FSIVy58RZDHHV7Ed1qhrIafuOnIsDkiGTvMwArpwc_W/exec";
         const QUEUE_STORAGE_KEY = 'nixus_calma_events_queue';
 
@@ -373,19 +397,13 @@
             return `CALMA-${fecha}-${aleatorio}`;
         }
 
-        let idSesionActiva = sessionStorage.getItem('nixus_calma_sesion_id');
-        if (!idSesionActiva) {
-            idSesionActiva = generarIdSesionUnico();
-            sessionStorage.setItem('nixus_calma_sesion_id', idSesionActiva);
-        }
+        let idSesionActiva = sessionStorage.getItem('nixus_calma_sesion_id') || generarIdSesionUnico();
+        sessionStorage.setItem('nixus_calma_sesion_id', idSesionActiva);
 
         let empresaActual = sessionStorage.getItem('nixus_calma_empresa') || localStorage.getItem('nixus_calma_empresa') || "";
         let segundosUsoSesion = 0;
         setInterval(() => { segundosUsoSesion++; }, 1000);
 
-        // ==============================================================
-        // 3. SINCRONIZACIÓN DE COLA OFFLINE HACIA GOOGLE SHEETS
-        // ==============================================================
         function encolarEventoLocalmente(payload) {
             let cola = [];
             try {
@@ -410,40 +428,29 @@
                 mode: 'no-cors',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(cola)
-            })
-            .then(() => {
-                localStorage.removeItem(QUEUE_STORAGE_KEY);
-                console.log(`[Sincronización Anclas de Calma]: ${cola.length} eventos transmitidos.`);
-            })
-            .catch(err => console.warn('[Aviso de Sincronización]:', err));
+            }).then(() => localStorage.removeItem(QUEUE_STORAGE_KEY)).catch(e => {});
         }
 
         window.addEventListener('online', procesarColaEventos);
 
         function registrarEventoEnGoogleSheet(modulo, accion, detalle) {
             if (!empresaActual) return;
-            let detalleLimpio = (detalle || "").toString().trim();
-            if (detalleLimpio.startsWith("+") || detalleLimpio.startsWith("=")) {
-                detalleLimpio = "'" + detalleLimpio;
-            }
-
             const payload = {
                 idSesion: idSesionActiva,
                 fechaHora: new Date().toLocaleString("sv-SE", { timeZone: "America/Bogota" }).replace('T', ' '),
                 empresa: empresaActual,
                 modulo: modulo || "Anclas de Calma",
                 accion: accion || "Interacción",
-                detalle: detalleLimpio,
+                detalle: detalle || "",
                 tiempoSesionMin: Math.max(1, Math.round(segundosUsoSesion / 60)),
                 userAgent: navigator.userAgent.substring(0, 100)
             };
-
             encolarEventoLocalmente(payload);
-            if (navigator.onLine) procesarColaEventos();
+            procesarColaEventos();
         }
 
         // ==============================================================
-        // 4. ONBOARDING & MANEJO DE EMPRESA
+        // 2. ONBOARDING
         // ==============================================================
         const modalOnboarding = document.getElementById('modalOnboarding');
         const formOnboarding = document.getElementById('formOnboarding');
@@ -468,7 +475,7 @@
             localStorage.setItem('nixus_calma_empresa', empresaActual);
             badgeEmpresaHeader.innerText = empresaActual;
             modalOnboarding.classList.add('hidden');
-            registrarEventoEnGoogleSheet("Onboarding", "Inicio de Sesión", "Ingreso a Anclas de Calma");
+            registrarEventoEnGoogleSheet("Onboarding", "Inicio de Sesión", empresaActual);
         });
 
         function cambiarEmpresa() {
@@ -478,7 +485,7 @@
         }
 
         // ==============================================================
-        // 5. LÓGICA DE UX: MODOS Y DIAGNÓSTICO CONVERSACIONAL (4 ETAPAS)
+        // 3. UX: MODOS Y DIAGNÓSTICO CONVERSACIONAL (4 ETAPAS)
         // ==============================================================
         let diagState = { answers: {}, points: 50 };
 
@@ -499,7 +506,7 @@
                 toolsSec.classList.remove('hidden');
                 btnTools.className = "p-5 rounded-2xl border-2 border-teal-500 bg-teal-50/50 text-left transition-all space-y-2 group shadow-sm";
                 btnDiag.className = "p-5 rounded-2xl border-2 border-slate-200 bg-white text-left transition-all space-y-2 group shadow-sm";
-                registrarEventoEnGoogleSheet("Navegación", "Modo Herramientas", "Acceso directo");
+                registrarEventoEnGoogleSheet("Navegación", "Modo Herramientas", "Acceso directo kit");
             }
         }
 
@@ -510,7 +517,7 @@
                 document.getElementById(`diag-step-${step + 1}`).classList.remove('hidden');
                 document.getElementById('diag-step-title').innerText = `Etapa ${step + 1} de 4`;
                 const pct = ((step + 1) / 4) * 100;
-                document.getElementById('diag-progress-txt').innerText = `${pct}% Completado`;
+                document.getElementById('diag-progress-txt').innerText = `${pct}%`;
                 document.getElementById('diag-progress-bar').style.width = `${pct}%`;
             } else {
                 showDiagResults();
@@ -525,7 +532,7 @@
             document.getElementById(`diag-step-${targetStep}`).classList.remove('hidden');
             document.getElementById('diag-step-title').innerText = `Etapa ${targetStep} de 4`;
             const pct = (targetStep / 4) * 100;
-            document.getElementById('diag-progress-txt').innerText = `${pct}% Completado`;
+            document.getElementById('diag-progress-txt').innerText = `${pct}%`;
             document.getElementById('diag-progress-bar').style.width = `${pct}%`;
         }
 
@@ -533,13 +540,12 @@
             for(let i=1; i<=4; i++) document.getElementById(`diag-step-${i}`).classList.add('hidden');
             document.getElementById('diag-result-screen').classList.remove('hidden');
             document.getElementById('diag-step-title').innerText = "Resultado de Autocuidado";
-            document.getElementById('diag-progress-txt').innerText = "100% Completado";
+            document.getElementById('diag-progress-txt').innerText = "100%";
             document.getElementById('diag-progress-bar').style.width = "100%";
 
             const state = diagState.answers[1] || "estrés";
             document.getElementById('diag-result-text').innerText = `Según tus respuestas, hoy experimentas ${state.toLowerCase()} de nivel ${diagState.answers[2]?.toLowerCase() || 'moderado'}. Tu cuerpo y tu mente se beneficiarán de una pausa enfocada en ${diagState.answers[4]?.toLowerCase() || 'relajación'}.`;
 
-            // Gamificación ética: se premia completar la actividad de autocuidado, nunca el reporte de malestar
             diagState.points += 10;
             document.getElementById('user-points').innerText = diagState.points;
             registrarEventoEnGoogleSheet("Diagnóstico", "Completado", JSON.stringify(diagState.answers));
@@ -551,111 +557,120 @@
             prevDiagStep(1);
         }
 
-        function jumpToTool(toolKey) {
-            switchMode('tools');
-            openToolModal(toolKey);
-        }
-
         function dismissBanner() {
             document.getElementById('contextual-banner').style.display = 'none';
         }
 
         // ==============================================================
-        // 6. MODALES DE HERRAMIENTAS (8 FUNCIONALIDADES)
+        // 4. LÓGICA DE MODALES DE HERRAMIENTAS INTERACTIVAS
         // ==============================================================
-        const toolModal = document.getElementById('tool-modal');
-        const toolContent = document.getElementById('tool-modal-content');
+        function openBreathModal() {
+            document.getElementById('breath-modal').classList.remove('hidden');
+            registrarEventoEnGoogleSheet("Herramienta", "Uso Respiración", "Abrió respiración guiada");
+        }
+        function closeBreathModal() {
+            document.getElementById('breath-modal').classList.add('hidden');
+        }
 
-        function openToolModal(key) {
-            toolModal.classList.remove('hidden');
-            let html = "";
-            if (key === 'breath') {
-                html = `
-                    <div class="text-center space-y-4">
-                        <h3 class="text-xl font-black text-slate-900">Respiración Guiada Interactiva</h3>
-                        <p class="text-xs text-slate-500">Inhala en 4 segundos, mantén 2 y exhala en 4 para activar el nervio vago.</p>
-                        <div class="w-32 h-32 rounded-full bg-calm-500 text-white flex items-center justify-center mx-auto text-sm font-bold shadow-xl animate-pulse">Respirar</div>
-                        <p class="text-[11px] text-slate-400">Práctica recomendada: 3 minutos diarios en tu puesto.</p>
-                    </div>
-                `;
-                registrarEventoEnGoogleSheet("Herramienta", "Uso Respiración", "Abrió respiración guiada");
-            } else if (key === 'grounding') {
-                html = `
-                    <div class="space-y-3">
-                        <h3 class="text-xl font-black text-slate-900">Anclaje Sensorial 5-4-3-2-1</h3>
-                        <p class="text-xs text-slate-600">Identifica a tu alrededor:</p>
-                        <ul class="text-xs space-y-2 list-disc list-inside text-slate-700">
-                            <li><strong>5</strong> cosas que puedas ver claramente.</li>
-                            <li><strong>4</strong> cosas que puedas tocar o sentir.</li>
-                            <li><strong>3</strong> sonidos que puedas escuchar.</li>
-                            <li><strong>2</strong> olores que puedas percibir.</li>
-                            <li><strong>1</strong> declaración positiva para ti.</li>
-                        </ul>
-                    </div>
-                `;
-                registrarEventoEnGoogleSheet("Herramienta", "Uso Grounding", "Abrió anclaje 5-4-3-2-1");
-            } else if (key === 'stretches') {
-                html = `
-                    <div class="space-y-3 text-center">
-                        <h3 class="text-xl font-black text-slate-900">Pausas Activas & Liberación</h3>
-                        <p class="text-xs text-slate-600">Realiza giros suaves de cuello hacia ambos lados durante 30 segundos, relaja los hombros y estira tus muñecas frente a la pantalla.</p>
-                        <div class="p-3 bg-emerald-50 rounded-xl text-emerald-800 text-xs font-bold">Ergonomía preventiva (Res. 0312/19)</div>
-                    </div>
-                `;
-                registrarEventoEnGoogleSheet("Herramienta", "Uso Pausas Activas", "Abrió estiramientos");
-            } else if (key === 'journal') {
-                html = `
-                    <div class="space-y-3">
-                        <h3 class="text-xl font-black text-slate-900">Diario Emocional Ocupacional</h3>
-                        <textarea rows="3" placeholder="Escribe brevemente cómo te sientes hoy..." class="w-full border rounded-xl p-3 text-xs focus:outline-none focus:ring-2 focus:ring-calm-500"></textarea>
-                        <button onclick="alert('Guardado de forma anónima.'); closeToolModal();" class="w-full bg-calm-600 text-white font-bold py-2.5 rounded-xl text-xs">Guardar en mi registro</button>
-                    </div>
-                `;
-                registrarEventoEnGoogleSheet("Herramienta", "Uso Diario Emocional", "Abrió diario");
-            } else if (key === 'micro') {
-                html = `
-                    <div class="space-y-3">
-                        <h3 class="text-xl font-black text-slate-900">Microaprendizaje de Salud Mental</h3>
-                        <p class="text-xs text-slate-600 leading-relaxed"><strong>Desconexión Laboral (Ley 2191 de 2022):</strong> Tienes el derecho legítimo a no responder comunicaciones de trabajo fuera de tu jornada para preservar tu salud mental.</p>
-                    </div>
-                `;
-                registrarEventoEnGoogleSheet("Herramienta", "Microaprendizaje", "Ley 2191");
-            } else if (key === 'route') {
-                html = `
-                    <div class="space-y-3">
-                        <h3 class="text-xl font-black text-slate-900">Ruta de Acompañamiento Empresarial</h3>
-                        <p class="text-xs text-slate-600">Si requieres apoyo psicológico especializado u orientación con el área de SST de ${empresaActual || 'tu empresa'}, comunícate a través de los canales internos autorizados.</p>
-                    </div>
-                `;
-                registrarEventoEnGoogleSheet("Herramienta", "Ruta de Apoyo", "Consultó canales");
-            } else if (key === 'challenges') {
-                html = `
-                    <div class="space-y-3 text-center">
-                        <h3 class="text-xl font-black text-slate-900">Retos de Bienestar Semanal</h3>
-                        <p class="text-xs text-slate-600">Reto activo de hoy: <strong>Completar 3 pausas activas y 1 ejercicio de respiración</strong> antes de finalizar tu turno.</p>
-                        <span class="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-full">+30 Puntos Calma al completar</span>
-                    </div>
-                `;
-                registrarEventoEnGoogleSheet("Herramienta", "Retos Bienestar", "Consultó retos");
-            } else if (key === 'kpis') {
-                html = `
-                    <div class="space-y-3">
-                        <h3 class="text-xl font-black text-slate-900">Panel de Indicadores SST (Agregado)</h3>
-                        <p class="text-xs text-slate-600">Información estadística anónima sobre participación, uso de herramientas de autorregulación y tendencias generales para el COPASST (Res. 0312 de 2019).</p>
-                    </div>
-                `;
-                registrarEventoEnGoogleSheet("Herramienta", "Indicadores SST", "Consultó panel");
+        function startBreathingCycle() {
+            const label = document.getElementById('breath-label');
+            const timer = document.getElementById('breath-timer');
+            let count = 4;
+            label.innerText = "INHALA PROFUNDO";
+            const interval = setInterval(() => {
+                count--;
+                timer.innerText = `${count}s`;
+                if(count <= 0) {
+                    clearInterval(interval);
+                    label.innerText = "EXHALA LENTO";
+                    timer.innerText = "4s";
+                }
+            }, 1000);
+        }
+
+        let groundingStep = 1;
+        const groundingStepsText = [
+            "5 Cosas que puedas VER: Observa tu entorno y detalla 5 objetos.",
+            "4 Cosas que puedas TOCAR: Siente la textura de tu ropa o escritorio.",
+            "3 Sonidos que puedas ESCUCHAR: Identifica ruidos sutiles a tu alrededor.",
+            "2 Olores que puedas PERCIBIR: Toma aire y percibe el ambiente.",
+            "1 Declaración Positiva: 'Estoy en control de mi jornada'."
+        ];
+
+        function openGroundingModal() {
+            groundingStep = 1;
+            document.getElementById('grounding-modal').classList.remove('hidden');
+            updateGroundingView();
+            registrarEventoEnGoogleSheet("Herramienta", "Uso Grounding", "Abrió anclaje sensorial");
+        }
+        function closeGroundingModal() {
+            document.getElementById('grounding-modal').classList.add('hidden');
+        }
+        function updateGroundingView() {
+            document.getElementById('grounding-content').innerHTML = `<p class="font-bold text-amber-900">${groundingStepsText[groundingStep-1]}</p>`;
+            document.getElementById('grounding-counter').innerText = `Paso ${groundingStep} de 5`;
+        }
+        function nextGroundingStep() {
+            if(groundingStep < 5) {
+                groundingStep++;
+                updateGroundingView();
+            } else {
+                alert("¡Anclaje completado con éxito!");
+                closeGroundingModal();
             }
-            toolContent.innerHTML = html;
-            lucide.createIcons();
         }
 
-        function closeToolModal() {
-            toolModal.classList.add('hidden');
+        let pomoTimer = 25 * 60;
+        let pomoInterval = null;
+        let pomoRunning = false;
+
+        function openPomodoroModal() {
+            document.getElementById('pomodoro-modal').classList.remove('hidden');
+            updatePomoText();
+            registrarEventoEnGoogleSheet("Herramienta", "Uso Pomodoro", "Abrió temporizador");
+        }
+        function closePomodoroModal() {
+            document.getElementById('pomodoro-modal').classList.add('hidden');
+            if(pomoInterval) clearInterval(pomoInterval);
+            pomoRunning = false;
+        }
+        function updatePomoText() {
+            const m = Math.floor(pomoTimer / 60);
+            const s = pomoTimer % 60;
+            document.getElementById('pomo-display').innerText = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+        }
+        function togglePomodoroTimer() {
+            const btn = document.getElementById('pomo-toggle-btn');
+            if(pomoRunning) {
+                clearInterval(pomoInterval);
+                pomoRunning = false;
+                btn.innerText = "Reanudar";
+            } else {
+                pomoRunning = true;
+                btn.innerText = "Pausar";
+                pomoInterval = setInterval(() => {
+                    if(pomoTimer > 0) {
+                        pomoTimer--;
+                        updatePomoText();
+                    } else {
+                        clearInterval(pomoInterval);
+                        alert("¡Bloque de 25 minutos completado! Toma 5 minutos de pausa.");
+                        closePomodoroModal();
+                    }
+                }, 1000);
+            }
+        }
+
+        function openMicroModal() {
+            document.getElementById('micro-modal').classList.remove('hidden');
+            registrarEventoEnGoogleSheet("Herramienta", "Microaprendizajes", "Consultó tips SG-SST");
+        }
+        function closeMicroModal() {
+            document.getElementById('micro-modal').classList.add('hidden');
         }
 
         // ==============================================================
-        // 7. SOS / PAUSA VAGAL DE RESCATE
+        // 5. SOS / PAUSA VAGAL DE RESCATE
         // ==============================================================
         function openRescueModal() {
             document.getElementById('rescue-modal').classList.remove('hidden');
