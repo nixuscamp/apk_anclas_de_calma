@@ -3,7 +3,7 @@
  * Service Worker: Campaña Anclas de Calma & Resiliencia
  */
 
-const CACHE_NAME = 'nixus-anclas-calma-v6';
+const CACHE_NAME = 'nixus-anclas-calma-v7';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
