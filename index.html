@@ -129,12 +129,12 @@
                     <div class="hidden sm:block w-px h-6 bg-slate-200"></div>
                     <div>
                         <div class="flex items-center space-x-2">
-                            <span class="font-extrabold text-slate-900 text-base sm:text-lg tracking-tight">SGSST <span class="text-calm-600 font-medium">Anclas de Calma</span></span>
+                            <span class="font-extrabold text-slate-900 text-base sm:text-lg tracking-tight"><span class="text-calm-600 font-medium">Anclas de Calma</span></span>
                             <span id="badgeEmpresaHeader" class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-calm-100 text-calm-800 truncate max-w-[120px]">
                                 Empresa
                             </span>
                         </div>
-                        <p class="text-xs text-slate-500 hidden sm:block">Herramienta de Autogestión del Estrés y Seguridad Psicológica</p>
+                        <p class="text-xs text-slate-500 hidden sm:block">Herramienta para la autogestión del Estrés y Seguridad Psicológica</p>
                     </div>
                 </div>
 
@@ -159,7 +159,7 @@
                     <!-- Botón de Rescate Vagal -->
                     <button onclick="openRescueModal()" class="inline-flex items-center space-x-1.5 bg-teal-700 hover:bg-teal-800 active:scale-95 text-white text-xs font-bold px-3 py-2 rounded-xl shadow-md shadow-teal-700/20 transition-all animate-pulse-slow">
                         <i data-lucide="wind" class="w-4 h-4"></i>
-                        <span>Pausa Vagal de Rescate</span>
+                        <span>Pausa de Rescate</span>
                     </button>
                 </div>
             </div>
@@ -177,10 +177,10 @@
                 </div>
                 <div>
                     <h3 class="text-sm sm:text-base font-bold text-slate-900 flex items-center gap-2">
-                        Gestión Preventiva del Estrés y Sobrecarga Laboral (Res. 2764/2022)
+                        Gestión Preventiva del Estrés y Sobrecarga Laboral 
                     </h3>
                     <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
-                        El agotamiento continuo, la falta de desconexión y la presión por metas reducen la capacidad atencional y aumentan los incidentes. Esta guía aplica técnicas somáticas validadas para devolver el equilibrio a tu sistema nervioso en 3 minutos.
+                        El agotamiento continuo y la presión por metas reducen la capacidad atencional y aumentan los incidentes. Esta guía aplica técnicas somáticas validadas para devolver el equilibrio a tu sistema nervioso en pocos minutos minutos.
                     </p>
                 </div>
             </div>
@@ -674,7 +674,7 @@
             </div>
 
             <div class="space-y-2">
-                <h3 class="text-2xl font-black text-slate-900">Pausa Vagal de Rescate</h3>
+                <h3 class="text-2xl font-black text-slate-900">Pausa de Rescate</h3>
                 <p class="text-xs text-slate-600">
                     Si experimentas agobio, bloqueo mental o sobrecarga aguda, detén tus labores 60 segundos. Vamos a activar el sistema parasimpático para regular tu frecuencia cardíaca.
                 </p>
@@ -708,7 +708,7 @@
     <!-- FOOTER -->
     <footer class="bg-white border-t border-slate-200 py-6 mt-12">
         <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500 space-y-1">
-            <p>© 2026 Sistema de Gestión de la Seguridad y Salud en el Trabajo (SG-SST) - Nixus Capital Humano</p>
+            <p>© 2026 Axa Colpatria - Nixus Capital Humano</p>
             <p class="text-[10px] text-slate-400">Herramienta de intervención preventiva del riesgo psicosocial. No reemplaza la valoración médica ocupacional ni psicológica individual.</p>
         </div>
     </footer>
@@ -1267,7 +1267,7 @@
                 playTone(360, 'sine', 0.2);
             }, 4000);
 
-            registrarEventoEnGoogleSheet("Rescate Vagal", "Apertura Modal", "Activó pausa vagal de rescate");
+            registrarEventoEnGoogleSheet("Rescate Vagal", "Apertura Modal", "Activó pausa rescate");
         }
 
         function closeRescueModal() {
